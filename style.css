@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+article {
+    padding: 20px;
+
+}
+header{
+display: flex;
+flex-direction: column;
+background-color: rgb(191, 223, 212);
+font-size: 20px;
+padding: 20px;
+margin: 20px 0;
+font-weight: bold;
+}
+main{
+
+text-align: left;
+font-size: 18px;
+padding: 20px;
+margin: 20px 0;
+font-weight: bold;
+margin-bottom: 40px;
+
+}
+.center {float: center; 
+    margin: 7px 0 7px 7px;
+    border-radius: 15px;}
+
+
+ .rightimg{
+
+    float: right; 
+    margin: 7px 0 7px 7px;
+    border-radius: 15px;
+   }
+ .cover:hover {
+    background-color: rgb(189, 189, 189);
+ }
+ .cover:active {
+    background-color: rgb(191, 223, 212);
+ }
+ footer{
+
+background-color: rgb(191, 223, 212);
+font-size: 20px;
+padding: 20px;
+margin-top: 80px;
+font-weight: bold;
+ }
+ .burger{
+   display: flex;
+   width: 30px;
+   height: 22px;
+   flex-direction: column;
+   cursor: pointer;
+   justify-content: space-around;
+ }
+ .burger span{
+   height: 2px;
+   background-color: black;
+ }
+ 
+.burger.active span:nth-child(1){
+    transform: rotate(45deg) translateY(8px);
+}
+.burger.active span:nth-child(2){
+    display: none;
+}
+.burger.active span:nth-child(3){
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+
+
+
+
+
+@media (max-width:548px) {
+    ul{display: none;}
+    ul.show{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        background-color: rgb(95, 155, 105);
+        padding: 5px;
+    }}
+
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* скрыта по умолчанию */
+  z-index: 1000;
+}
+  
